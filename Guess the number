@@ -1,0 +1,20 @@
+# Guess the number game !
+
+import random
+
+target = random.randint(1, 10)
+attempts = 0
+
+while True:
+    num = int(input("Let's play a game! Enter a number from 1 to 10: "))
+    attempts += 1
+    
+    if num == target:
+        print(f"Wow, you guessed it right! The number was: {target}")
+        break
+    elif num < target:
+        print("Think bigger !")
+    else:
+        print("Oh, that was too big !")
+
+print(f"You guessed the number in {attempts} attempts. Thanks for playing!")
