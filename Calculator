@@ -1,0 +1,21 @@
+# Arithmatic Calculator
+
+x = int(input('Enter the first no:'))
+y = int(input('Enter the second no:'))
+
+choice = input('Choose the operation to perform +, -, *, /:')
+
+if choice=='+':
+    print(f"Sum of {x} and {y} is: {x+y}")
+    
+elif choice=='-':
+    print(f"Difference of {x} and {y} is: {x-y}")
+    
+elif choice=='*':
+    print(f"Product of {x} and {y} is: {x*y}")
+    
+elif choice=='/':
+    print(f"Divison of {x} and {y} is: {x/y}")
+    
+else:
+    print("Oops! You entered an invalid operation.")
