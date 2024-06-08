@@ -1,0 +1,37 @@
+# To do list
+
+# Python To Do List Project
+
+to_do_list = []
+
+def add_task(task):
+    to_do_list.append(task)
+
+def remove_task(task):
+    if task in to_do_list:
+        to_do_list.remove(task)
+    
+def show_task():
+    for task in to_do_list:
+        print(task)
+
+while True:
+    print("\n1. Add Task")
+    print("\n2. Remove Task")
+    print("\n3. Show Task")
+    print("\n4. Exit")
+    
+    choice = input("\nEnter Choice:")
+
+    if choice == '1':
+        task = input("Enter task:")
+        add_task(task)
+    elif choice == '2':
+        task = input('Enter task:')
+        remove_task(task)
+    elif choice == '3':
+        show_task()
+    elif choice == '4':
+        break
+    else:
+        print("Invalid input!")
